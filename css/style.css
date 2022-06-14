@@ -5,190 +5,232 @@
 /* цвет фона #E5E5E5 */
 
 :root {
-    --primary-text-color: #212121;
-    --title-text-color: #757575;
-    --accent-color: #2196f3;
-    --white-color: #ffffff;
-
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --background-box: #2F303A;
+  --background-team: #F5F4FA;
+  --shadow: rgba(0, 0, 0, 0.15)
 }
 
 body {
-    background-color: #e5e5e5;
-    color: var(--primary-text-color);
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    line-height: 1.14;
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.14;
 }
 
 li {
-    display: block;
+  display: block;
 }
+
+.img {
+  display: block;
+}
+
 /* Logo */
 
 .logo {
-    font-family: Raleway;
+  font-family: Raleway;
   font-weight: 700;
-font-size: 26px;
-line-height: 1.2;
-color: var(--primary-text-color);
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--primary-text-color);
+  text-decoration: none;
 }
 
 .logo .web {
-    color:  #2196F3;
+  color: #2196f3;
 }
+
 
 
 /* site nav */
 
-.site-nav .link {
-    font-family: Roboto;
+.site-nav {
+  font-family: roboto;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
-text-decoration: none;
-color: var(--primary-text-color);
 }
 
-.site-nav .link .link-blue {
-    color: var(--accent-color);
+.site-nav .link {
+  color: var(--primary-text-color);
+  text-decoration: none;
 }
 
-.site-nav .link:hover {
-    color: var(--accent-color);
+.link-current {
+  color: var(--accent-color);
 }
+
+.link-contact {
+  font-family: roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+color: var(--accent-color); 
+}
+
+.link-contact:hover,
+.link-contact:focus {
+  color: var(--accent-color);
+}
+
 
 
 /* Герой */
-
+.hero {
+  background-color: var(--background-box);
+}
 .hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
 
-font-weight: 900;
-font-size: 44px;
-line-height: 60px;
-text-align: center;
-text-transform: uppercase;
-
-color: var(--white-color);
-    
+  color: var(--white-color);
 }
 
 /* Button */
 button {
-    cursor: pointer;
-    font-weight: 700;
-font-size: 16px;
-line-height: 30px;
-display: flex;
-align-items: center;
-text-align: center;
-    color: var(--white-color);
-    background-color: var(--accent-color);
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  border: none;
+  box-shadow: var(--shadow);
+  border-radius: 4px;
 }
-button:hover, button:focus {
-    color: var(--white-color);
-}
+button:hover,
+button:focus 
+
+
+  .servbut:hover {
+    background-color: #1f89df
+    }
 /* Заголовки */
 
 h2 {
-    font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-text-align: center;
-color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--primary-text-color);
 }
 
 h3 {
-    font-weight: 500;
-font-size: 16px;
-line-height: 1.18;
-color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--primary-text-color);
 }
 
 /* Наши Преимущества */
 
-.benefits {
-    font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-color: var(--primary-text-color);
 
+
+.benefits {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--primary-text-color);
 }
 
 .benefits-title {
- font-size: 14px;
-color: var(--title-text-color);
+  font-size: 14px;
+  color: var(--title-text-color);
+}
+
+/* Наша команда */
+.team {
+  background-color: var(--background-team);
 }
 
 
-/* Наша команда */
 
 .team-text {
-font-size: 16px;
-line-height: 1.18;
-color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--title-text-color);
 }
 
 /* Footer */
-address {
-    font-size: 14px;
-line-height: 1.71;
-color: var(--white-color);
-font-family: Roboto, sans-serif;
-font-style: normal;
+
+.studio {
+  color: var(--white-color);
 }
-address:hover, address:focus {
-    color: var(--accent-color);
+address {
+  background-color: var(--background-box);
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--white-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+}
+address:hover,
+address:focus {
+  color: var(--accent-color);
 }
 
 .adress-contact a {
-    color: var(--title-text-color);
-    text-decoration: none;
-    font-size: 14px;
-line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .adress-contact a:hover {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
-
-
 
 /* PORTFOLIO HTML */
 
 /* ALL portfolio */
 
 .portfolio-name {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    color: var(--primary-text-color); 
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--primary-text-color);
 }
 
 .portfolio-text {
-    font-weight: 400;
-font-size: 16px;
-line-height: 1.87;
-color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--title-text-color);
 }
-
 
 .button-portofolio {
-    font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-color: var(--primary-text-color);
-text-align: center;
-font-family: Roboto, sans-serif;
-background-color: #f5f4fa;
-width: 128px;
-height: 38px;
-left: 576px;
-top: 174px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--primary-text-color);
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  background-color: #f5f4fa;
+  width: 128px;
+  height: 38px;
+  left: 576px;
+  top: 174px;
 }
 
-.button-portofolio:hover, .button-portofolio:focus {
-    background-color: var(--accent-color);
+.button-portofolio:hover,
+.button-portofolio:focus {
+  background-color: var(--accent-color);
 }
