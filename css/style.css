@@ -63,6 +63,7 @@ line-height: 1.14;
 
 .link-current {
   color: var(--accent-color);
+  text-decoration: none;
 }
 
 .link-contact {
@@ -224,13 +225,11 @@ address:focus {
   text-align: center;
   font-family: Roboto, sans-serif;
   background-color: #f5f4fa;
-  width: 128px;
-  height: 38px;
-  left: 576px;
-  top: 174px;
+
 }
 
 .button-portofolio:hover,
 .button-portofolio:focus {
   background-color: var(--accent-color);
+  color: white;
 }
